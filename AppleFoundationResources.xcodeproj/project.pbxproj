@@ -11,6 +11,18 @@
 		64ABCF902CAF747200F1E808 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCF8F2CAF747200F1E808 /* ContentView.swift */; };
 		64ABCF922CAF747400F1E808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64ABCF912CAF747400F1E808 /* Assets.xcassets */; };
 		64ABCF952CAF747400F1E808 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64ABCF942CAF747400F1E808 /* Preview Assets.xcassets */; };
+		64ABCFA12CAF74C900F1E808 /* KnowledgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCFA02CAF74C900F1E808 /* KnowledgeView.swift */; };
+		64ABCFA32CAF750100F1E808 /* KnowledgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCFA22CAF750100F1E808 /* KnowledgeViewModel.swift */; };
+		64ABCFA52CAF751800F1E808 /* KnowledgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCFA42CAF751800F1E808 /* KnowledgeModel.swift */; };
+		64ABCFA82CAF7AED00F1E808 /* KnowledgeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCFA72CAF7AED00F1E808 /* KnowledgeCard.swift */; };
+		64ABCFAA2CAF7F4200F1E808 /* KnowledgeCardDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCFA92CAF7F4200F1E808 /* KnowledgeCardDetailList.swift */; };
+		64ABCFAC2CAF905A00F1E808 /* KnowledgeCardPlainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCFAB2CAF905A00F1E808 /* KnowledgeCardPlainList.swift */; };
+		64ABCFAE2CAF991800F1E808 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCFAD2CAF991800F1E808 /* WebView.swift */; };
+		64ABCFB52CAFB49000F1E808 /* AccessCredentialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCFB42CAFB49000F1E808 /* AccessCredentialsView.swift */; };
+		64ABCFB72CAFB4DB00F1E808 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCFB62CAFB4DB00F1E808 /* SettingsView.swift */; };
+		64ABCFB92CAFB50C00F1E808 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCFB82CAFB50C00F1E808 /* AboutView.swift */; };
+		64ABCFBB2CAFB54700F1E808 /* SavedKnowledgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCFBA2CAFB54700F1E808 /* SavedKnowledgeView.swift */; };
+		64ABCFBF2CAFBA2C00F1E808 /* CategoryKnowledgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ABCFBE2CAFBA2C00F1E808 /* CategoryKnowledgeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +31,18 @@
 		64ABCF8F2CAF747200F1E808 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64ABCF912CAF747400F1E808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64ABCF942CAF747400F1E808 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64ABCFA02CAF74C900F1E808 /* KnowledgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeView.swift; sourceTree = "<group>"; };
+		64ABCFA22CAF750100F1E808 /* KnowledgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeViewModel.swift; sourceTree = "<group>"; };
+		64ABCFA42CAF751800F1E808 /* KnowledgeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeModel.swift; sourceTree = "<group>"; };
+		64ABCFA72CAF7AED00F1E808 /* KnowledgeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeCard.swift; sourceTree = "<group>"; };
+		64ABCFA92CAF7F4200F1E808 /* KnowledgeCardDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeCardDetailList.swift; sourceTree = "<group>"; };
+		64ABCFAB2CAF905A00F1E808 /* KnowledgeCardPlainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeCardPlainList.swift; sourceTree = "<group>"; };
+		64ABCFAD2CAF991800F1E808 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		64ABCFB42CAFB49000F1E808 /* AccessCredentialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCredentialsView.swift; sourceTree = "<group>"; };
+		64ABCFB62CAFB4DB00F1E808 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		64ABCFB82CAFB50C00F1E808 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		64ABCFBA2CAFB54700F1E808 /* SavedKnowledgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedKnowledgeView.swift; sourceTree = "<group>"; };
+		64ABCFBE2CAFBA2C00F1E808 /* CategoryKnowledgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryKnowledgeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +75,11 @@
 		64ABCF8C2CAF747200F1E808 /* AppleFoundationResources */ = {
 			isa = PBXGroup;
 			children = (
+				64ABCF9F2CAF74A900F1E808 /* View */,
+				64ABCF9E2CAF749D00F1E808 /* Model */,
 				64ABCF8D2CAF747200F1E808 /* AppleFoundationResourcesApp.swift */,
 				64ABCF8F2CAF747200F1E808 /* ContentView.swift */,
+				64ABCF9B2CAF747F00F1E808 /* ViewModel */,
 				64ABCF912CAF747400F1E808 /* Assets.xcassets */,
 				64ABCF932CAF747400F1E808 /* Preview Content */,
 			);
@@ -65,6 +92,55 @@
 				64ABCF942CAF747400F1E808 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64ABCF9B2CAF747F00F1E808 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				64ABCFA22CAF750100F1E808 /* KnowledgeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		64ABCF9E2CAF749D00F1E808 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64ABCFA42CAF751800F1E808 /* KnowledgeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64ABCF9F2CAF74A900F1E808 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64ABCFA02CAF74C900F1E808 /* KnowledgeView.swift */,
+				64ABCFB32CAFB47C00F1E808 /* Pages */,
+				64ABCFA62CAF7ACE00F1E808 /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64ABCFA62CAF7ACE00F1E808 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				64ABCFA72CAF7AED00F1E808 /* KnowledgeCard.swift */,
+				64ABCFA92CAF7F4200F1E808 /* KnowledgeCardDetailList.swift */,
+				64ABCFAB2CAF905A00F1E808 /* KnowledgeCardPlainList.swift */,
+				64ABCFAD2CAF991800F1E808 /* WebView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		64ABCFB32CAFB47C00F1E808 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				64ABCFB42CAFB49000F1E808 /* AccessCredentialsView.swift */,
+				64ABCFB62CAFB4DB00F1E808 /* SettingsView.swift */,
+				64ABCFB82CAFB50C00F1E808 /* AboutView.swift */,
+				64ABCFBA2CAFB54700F1E808 /* SavedKnowledgeView.swift */,
+				64ABCFBE2CAFBA2C00F1E808 /* CategoryKnowledgeView.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +214,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				64ABCF902CAF747200F1E808 /* ContentView.swift in Sources */,
+				64ABCFAC2CAF905A00F1E808 /* KnowledgeCardPlainList.swift in Sources */,
 				64ABCF8E2CAF747200F1E808 /* AppleFoundationResourcesApp.swift in Sources */,
+				64ABCFB52CAFB49000F1E808 /* AccessCredentialsView.swift in Sources */,
+				64ABCFB92CAFB50C00F1E808 /* AboutView.swift in Sources */,
+				64ABCFA82CAF7AED00F1E808 /* KnowledgeCard.swift in Sources */,
+				64ABCFAA2CAF7F4200F1E808 /* KnowledgeCardDetailList.swift in Sources */,
+				64ABCFA12CAF74C900F1E808 /* KnowledgeView.swift in Sources */,
+				64ABCFAE2CAF991800F1E808 /* WebView.swift in Sources */,
+				64ABCFA52CAF751800F1E808 /* KnowledgeModel.swift in Sources */,
+				64ABCFBB2CAFB54700F1E808 /* SavedKnowledgeView.swift in Sources */,
+				64ABCFBF2CAFBA2C00F1E808 /* CategoryKnowledgeView.swift in Sources */,
+				64ABCFA32CAF750100F1E808 /* KnowledgeViewModel.swift in Sources */,
+				64ABCFB72CAFB4DB00F1E808 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
