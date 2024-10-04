@@ -11,9 +11,6 @@ import WebKit
 struct KnowledgeCard: View {
     let knowledge: Knowledge
     let isLargeCard: Bool
-    let onSaveToggle: () -> Void
-    
-    @State private var viewModel = KnowledgeView.ViewModel()
     
     @State private var animationAmount: CGFloat = 0.0
     
@@ -24,7 +21,7 @@ struct KnowledgeCard: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     Button {
-                        viewModel.appendToList(newItem: knowledge.id)
+                      
                     } label: {
                         Image(systemName: knowledge.isSaved ? "bookmark.fill" : "bookmark")
                             .foregroundStyle(Color.accentColor)
@@ -83,7 +80,7 @@ struct KnowledgeCard: View {
 struct KnowledgeCard_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            KnowledgeCard(knowledge: Knowledge(title: "Human Interface Guideline", details: "Apple's Design Resource Guide", url: "https://www.google.com", isSaved: true, image: "INF001", category: "interface"), isLargeCard: true, onSaveToggle: { print("Hi") })
+            KnowledgeCard(knowledge: Knowledge(title: "Human Interface Guideline", details: "Apple's Design Resource Guide", url: "https://www.google.com", isSaved: true, image: "INF001", category: "foundation"), isLargeCard: true)
         }
     }
 }

@@ -39,7 +39,7 @@ struct KnowledgeCardDetailList: View {
                 
                 HStack(spacing: 16) {
                     ForEach(knowledgeList){item in
-                        KnowledgeCard(knowledge: item, isLargeCard: false, onSaveToggle: {print("Card Pressed")})
+                        KnowledgeCard(knowledge: item, isLargeCard: false)
                     }
                 }
                 .padding(.horizontal)

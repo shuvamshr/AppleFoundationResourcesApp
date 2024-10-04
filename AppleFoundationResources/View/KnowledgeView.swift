@@ -15,13 +15,13 @@ struct KnowledgeView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                KnowledgeCardDetailList(title: "Foundation Skills", details: "Get a gist of Apple's Guideline", knowledgeList: viewModel.getKnowledgeList(by: "interface"))
+                KnowledgeCardDetailList(title: "Foundation Skills", details: "Learn the basics for your app", knowledgeList: viewModel.getKnowledgeList(by: "foundation"))
                 Divider()
                     .padding(.horizontal)
-                KnowledgeCardDetailList(title: "Intermediate Concepts", details: "Get a gist of Apple's Guideline", knowledgeList: viewModel.getKnowledgeList(by: "interface"))
+                KnowledgeCardDetailList(title: "Intermediate Concepts", details: "Enhance your app with more details", knowledgeList: viewModel.getKnowledgeList(by: "intermediate"))
                 Divider()
                     .padding(.horizontal)
-                KnowledgeCardDetailList(title: "Advanced Development", details: "Get a gist of Apple's Guideline", knowledgeList: viewModel.getKnowledgeList(by: "interface"))
+                KnowledgeCardDetailList(title: "Advanced Development", details: "Get your app ready with complex tools", knowledgeList: viewModel.getKnowledgeList(by: "advanced"))
             }
             .navigationTitle("Knowledge")
             .toolbar {

@@ -13,7 +13,7 @@ struct KnowledgeCardPlainList: View {
         ScrollView {
             VStack(spacing: 16) {
                 ForEach(knowledgeList){item in
-                    KnowledgeCard(knowledge: item, isLargeCard: true, onSaveToggle: {print("Save Pressed")})
+                    KnowledgeCard(knowledge: item, isLargeCard: true)
                 }
             }
             .padding(.vertical)

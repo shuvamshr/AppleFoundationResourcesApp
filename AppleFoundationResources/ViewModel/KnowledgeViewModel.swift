@@ -10,20 +10,33 @@ import Foundation
 extension KnowledgeView {
     class ViewModel: ObservableObject {
         private(set) var knowledgeList: [Knowledge] = [Knowledge]()
-        
-        private(set) var savedList = [String]()
-        
+    
         init() {
             getSampleData()
-            savedList = retrieveList()
         }
         
         func getSampleData() {
             let sampleData = [
-                Knowledge(title: "Human Interface Guideline", details: "Apple's Design Resource Guide", url: "https://www.google.com", isSaved: false, image: "https://docs-assets.developer.apple.com/published/f630248869246f4f877a49f6b285b875/components-controls-intro@2x.png", category: "interface"),
-                Knowledge(title: "Human Interface Guideline", details: "Apple's Design Resource Guide", url: "https://www.google.com", isSaved: true, image: "https://docs-assets.developer.apple.com/published/f630248869246f4f877a49f6b285b875/components-controls-intro@2x.png", category: "interface"),
-                Knowledge(title: "Human Interface Guideline", details: "Apple's Design Resource Guide", url: "https://www.google.com", isSaved: true, image: "https://docs-assets.developer.apple.com/published/f630248869246f4f877a49f6b285b875/components-controls-intro@2x.png", category: "interface"),
+                Knowledge(title: "Swift Programming Language", details: "Basic syntax and features", url: "https://developer.apple.com/swift/", isSaved: false, image: "https://developer.apple.com/swift/images/swift-og.png", category: "foundation"),
+                Knowledge(title: "UIKit Framework", details: "Core UI components", url: "https://developer.apple.com/documentation/uikit/", isSaved: false, image: "https://getuikit.com/images/uikit-meta.png", category: "foundation"),
+                Knowledge(title: "Model-View-Controller (MVC)", details: "Design pattern for architecture", url: "", isSaved: false, image: "https://upload.wikimedia.org/wikipedia/commons/5/56/Model_View_Controller_%28MVC%29.svg", category: "foundation"),
+                Knowledge(title: "Auto Layout", details: "Responsive layout design", url: "", isSaved: false, image: "https://developer.apple.com/assets/elements/icons/auto-layout/auto-layout.svg", category: "foundation"),
+                Knowledge(title: "Networking", details: "Making network requests", url: "", isSaved: false, image: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Network-architecture.svg", category: "foundation"),
+                
+                Knowledge(title: "SwiftUI", details: "Declarative UI building", url: "", isSaved: false, image: "https://developer.apple.com/assets/elements/icons/swiftui/swiftui.svg", category: "intermediate"),
+                Knowledge(title: "Persistence", details: "Data storage options", url: "", isSaved: false, image: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Database_symbol.svg", category: "intermediate"),
+                Knowledge(title: "Concurrency", details: "Asynchronous programming basics", url: "", isSaved: false, image: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Concurrency_icon.svg", category: "intermediate"),
+                Knowledge(title: "App Lifecycle", details: "Managing app states", url: "", isSaved: false, image: "https://upload.wikimedia.org/wikipedia/commons/3/36/App_Lifecycle.png", category: "intermediate"),
+                Knowledge(title: "Testing", details: "Unit and UI tests", url: "", isSaved: false, image: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Testing_Icon.png", category: "intermediate"),
+                
+                Knowledge(title: "App Extensions", details: "Managing app extensions", url: "", isSaved: false, image: "https://upload.wikimedia.org/wikipedia/commons/a/a8/App_extensions_icon.png", category: "advanced"),
+                Knowledge(title: "Swift Package Manager", details: "Managing dependencies effectively", url: "", isSaved: false, image: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Swift_package_manager_icon.svg", category: "advanced"),
+                Knowledge(title: "Advanced Networking", details: "Complex networking scenarios", url: "", isSaved: false, image: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Networking_concept.svg", category: "advanced"),
+                Knowledge(title: "Architectural Patterns", details: "Exploring design patterns", url: "", isSaved: false, image: "https://upload.wikimedia.org/wikipedia/commons/7/70/Architectural_pattern.svg", category: "advanced"),
+                Knowledge(title: "Performance Optimization", details: "Optimizing app performance", url: "", isSaved: false, image: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Optimization_icon.svg", category: "advanced")
             ]
+
+
             
             knowledgeList = sampleData
         }
@@ -39,6 +52,10 @@ extension KnowledgeView {
         func getKnowledgeListBySaved() -> [Knowledge] {
             return knowledgeList.filter { savedList.contains($0.id) }
         }
+        
+        // TODO: Make Save Functionality Work
+        
+        private(set) var savedList = [String]()
         
         func retrieveList() -> [String] {
             return UserDefaults.standard.array(forKey: "savedList") as? [String] ?? []
