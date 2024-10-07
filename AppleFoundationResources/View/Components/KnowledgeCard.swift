@@ -25,6 +25,7 @@ struct KnowledgeCard: View {
                     } label: {
                         Image(systemName: knowledge.isSaved ? "bookmark.fill" : "bookmark")
                             .foregroundStyle(Color.accentColor)
+                        
                     }
                 }
         } label: {
