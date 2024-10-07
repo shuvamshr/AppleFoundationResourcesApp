@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Knowledge: Identifiable {
+struct Knowledge: Decodable, Identifiable {
     let id: String;
     let title: String;
     let details: String;

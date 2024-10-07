@@ -33,7 +33,7 @@ struct KnowledgeView: View {
                             HStack {
                                 Image(systemName: "bookmark.fill")
                                 Text("Saved List (\(viewModel.getKnowledgeListBySaved().count))")
-                                    .fontWeight(.bold)
+                                    .fontWeight(.semibold)
                             }
                         }
                         Spacer()

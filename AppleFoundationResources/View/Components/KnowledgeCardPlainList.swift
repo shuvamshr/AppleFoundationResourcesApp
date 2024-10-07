@@ -18,7 +18,7 @@ struct KnowledgeCardPlainList: View {
             }
             .padding(.vertical)
         }
-     
+        .scrollIndicators(.hidden)
     }
 }
 
